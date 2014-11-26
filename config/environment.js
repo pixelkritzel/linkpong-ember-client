@@ -42,6 +42,6 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-
+  ENV.contentSecurityPolicyHeader = 'Disabled-Content-Security-Policy';
   return ENV;
 };
