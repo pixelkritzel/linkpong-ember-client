@@ -8,9 +8,10 @@ module.exports = function(app) {
     res.send({"store": [{"id": "2"}]});
   });
 
-  storesRouter.get('/2', function(req, res){
+  storesRouter.get('/store/2', function(req, res){
+    console.log(req);
     res.send({"store": [{"id": "2"}]});
   });
 
-  app.use('/stores', storesRouter);
+  app.use('/store', storesRouter);
 };
