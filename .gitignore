@@ -15,3 +15,5 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+linkplong-ember-client.sublime-project
+linkplong-ember-client.sublime-workspace
