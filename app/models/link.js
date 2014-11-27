@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  store: DS.belongsTo('store')
+  // store: DS.belongsTo('store')
 });

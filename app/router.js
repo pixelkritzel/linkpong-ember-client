@@ -9,7 +9,6 @@ Router.map(function() {
   this.resource('store', { path: '/store/:store_id'}, function() {
     this.resource('links');
   });
-  this.route('store/links');
 });
 
 export default Router;
