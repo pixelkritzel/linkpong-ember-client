@@ -6,8 +6,8 @@ export default Ember.Route.extend({
   },
 
   setupController: function(controller, model) {
-    $.ajax('/bookmarklets/template', {async: false}).done(function(bookmarklet) {
-      controller.bookmarklet = bookmarklet;
+    $.ajax('/bookmarklets/template', {async: false}).done(function(bookmarkletTemplate) {
+      controller.bookmarkletTemplate = bookmarkletTemplate;
       this._super(controller, model);
     }.bind(this));
   }

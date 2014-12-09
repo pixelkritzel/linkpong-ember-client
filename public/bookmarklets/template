@@ -1,8 +1,21 @@
 javascript:(function(){
-      var script  = document.createElement( 'script' );
+  var store =  "__STORE__";
 
-      script.setAttribute( 'type', 'text/javascript' );
-      script.setAttribute( 'charset', 'UTF-8' );
-      script.setAttribute( 'src', 'http://localhost:4200/bookmarklets/response.js?r=' + Math.random() );
-      document.documentElement.appendChild( script );
+  if (!isNaN(store)) {
+    store = parseInt(store, 10);
+  }
+
+  if(!window.__LINKPONG) {
+    window.__LINKPONG = {};
+    window.__LINKPONG.storeId = store;
+  } else if (window.__LINKPONG.storeId !== store) {
+    console.log('__LINKPONG is defined. Aborting to prevent conflicts with other scripts.');
+    return;
+  }
+
+  var script  = document.createElement( 'script' );
+  script.setAttribute( 'type', 'text/javascript' );
+  script.setAttribute( 'charset', 'UTF-8' );
+  script.setAttribute( 'src', 'http://localhost:4200/bookmarklets/response.js?r=' + Math.random() );
+  document.documentElement.appendChild( script );
 })();
