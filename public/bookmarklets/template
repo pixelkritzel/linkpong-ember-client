@@ -1,0 +1,8 @@
+javascript:(function(){
+      var script  = document.createElement( 'script' );
+
+      script.setAttribute( 'type', 'text/javascript' );
+      script.setAttribute( 'charset', 'UTF-8' );
+      script.setAttribute( 'src', 'http://localhost:4200/bookmarklets/response.js?r=' + Math.random() );
+      document.documentElement.appendChild( script );
+})();
