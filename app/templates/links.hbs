@@ -2,7 +2,7 @@
 
 <ul>
 {{#each model.links}}
-  <li>{{title}} - {{url}}</li>
+  <li><a {{bind-attr href="url"}}>{{title}}</a></li>
 {{/each}}
 </ul>
 
