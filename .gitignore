@@ -19,3 +19,4 @@ linkplong-ember-client.sublime-project
 linkplong-ember-client.sublime-workspace
 *.swp
 
+.idea/

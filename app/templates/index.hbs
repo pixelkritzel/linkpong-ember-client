@@ -1,4 +1,4 @@
-<button type="button" {{action 'createNewStore'}}>Create new store</button>
+<button type="button" class="btn" {{action 'createNewStore'}}>Create new store</button>
 
-{{input value=storeID}}
+{{input value=storeID class="form-control"}}
 {{#link-to 'store' storeID}}Open store{{/link-to}}
